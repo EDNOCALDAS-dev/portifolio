@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bazar Recife — armarinhos, tecidos e confecções. Tradição, variedade e qualidade há mais de 50 anos." />
+  <title>Bazar Recife | Armarinhos, Tecidos e Confecções</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar fixa e responsiva -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home" aria-label="Ir para o início">
+        <i class="bi bi-tree-fill me-2"></i>Bazar Recife
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu de navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tecidos" data-bs-toggle="modal" data-bs-target="#tecidosModal">Tecidos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#confecoes">Confecções</a></li>
+          <li class="nav-item"><a class="nav-link nav-btn" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção Hero -->
+  <header class="hero-section section-padding" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative">
+
+      <div class="row align-items-center min-vh-100 gy-5">
+        <div class="col-lg-7 reveal">
+          <span class="eyebrow"><i class="bi bi-flower1 me-2"></i>Bazar Recife</span>
+          <h1 class="hero-title mt-3">Bem-vindo ao <span>Bazar Recife</span></h1>
+          <p class="hero-subtitle">
+            Há mais de 50 anos somos referência em armarinhos, tecidos e confecções — qualidade, variedade e atendimento próximo à comunidade.
+          </p>
+
+          <div class="hero-actions d-flex flex-column flex-sm-row gap-3 mt-4">
+            <a href="#produtos" class="btn btn-primary-custom">
+              Ver Produtos <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a href="#contato" class="btn btn-outline-custom">
+              Fale conosco <i class="bi bi-envelope ms-2"></i>
+            </a>
+          </div>
+
+            <div class="hero-stats mt-5">
+            <div>
+              <strong>+50</strong>
+              <span>Anos de tradição</span>
+            </div>
+            <div>
+              <strong>Variedade</strong>
+              <span>Tecidos e aviamentos</span>
+            </div>
+            <div>
+              <strong>Atendimento</strong>
+              <span>Próximo e atencioso</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 reveal reveal-delay-1">
+          <div class="profile-card mx-auto">
+            <div class="profile-frame">
+              <img src="img.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sobre -->
+    <section class="about-section section-padding" id="sobre">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-5 reveal">
+            <div class="about-visual">
+              <div class="pastoral-card">
+                <i class="bi bi-sunrise"></i>
+                <h3>Tradição, variedade e confiança</h3>
+                <p>No Bazar Recife, cada cliente encontra tecidos, aviamentos e materiais de qualidade para cuidar da costura com praticidade e beleza.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 reveal reveal-delay-1">
+            <span class="section-label">BAZAR RECIFE</span>
+            <h2 class="section-title">Armarinhos, tecidos e confecções com tradição</h2>
+            <p class="section-text">
+              O Bazar Recife é uma empresa familiar que há décadas atende costureiras, ateliês, profissionais da moda e clientes que buscam produtos de confiança. Nossa missão é unir qualidade, variedade e preço justo.
+            </p>
+            <p class="section-text">
+              Valorizamos o atendimento atento e humano, a parceria com costureiras locais e a manutenção da tradição dos armarinhos, acompanhando as tendências e necessidades dos nossos clientes.
+            </p>
+
+            <div class="skills-grid mt-4">
+              <div class="skill-pill"><i class="bi bi-box-seam"></i> Tecidos variados</div>
+              <div class="skill-pill"><i class="bi bi-scissors"></i> Linhas e aviamentos</div>
+              <div class="skill-pill"><i class="bi bi-button-fill"></i> Botões e zíperes</div>
+              <div class="skill-pill"><i class="bi bi-egg-fried"></i> Materiais para costura</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="projects-section section-padding" id="produtos">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">Produtos</span>
+          <h2 class="section-title mx-auto">O que você encontra no Bazar Recife</h2>
+          <p class="section-text mx-auto max-width-text">
+            Tecidos para roupas e artesanato, linhas, agulhas, botões, zíperes, acessórios de confecção e materiais para corte e costura.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-md-6 reveal reveal-delay-1">
+            <article class="project-card h-100">
+              <div class="project-img-wrapper">
+                <img src="imagens/tecidos variados.jpg" alt="Tecido colorido" class="project-img" />
+                <span class="project-tag">Tecidos</span>
+              </div>
+              <div class="project-content">
+                <h3>Tecidos variados</h3>
+                <p>Seleção para moda casual, social, uniformes, artesanato e decoração, com variedade de cores e texturas.</p>
+                <div class="project-techs">
+                  <span>Algodão</span>
+                  <span>Seda</span>
+                  <span>Sintéticos</span>
+                </div>
+                <a href="#contato" class="project-link">Peça informações <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal reveal-delay-2">
+            <article class="project-card h-100">
+              <div class="project-img-wrapper">
+                <img src="imagens/aviamentos.jpg" alt="Aviamentos e linhas" class="project-img" />
+                <span class="project-tag">Aviamentos</span>
+              </div>
+              <div class="project-content">
+                <h3>Linhas, botões e acessórios</h3>
+                <p>Linhas, agulhas, botões, zíperes, elásticos e outros aviamentos para confecção e reparos.</p>
+                <div class="project-techs">
+                  <button type="button" class="btn btn-sm btn-outline-custom" data-bs-toggle="modal" data-bs-target="#botoesModal">Botões variados</button>
+                  <button type="button" class="btn btn-sm btn-outline-custom" data-bs-toggle="modal" data-bs-target="#ziperModal">Zíperes</button>
+                </div>
+                <a href="#contato" class="project-link">Solicitar orçamento <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tecidos e Experiência -->
+    <section class="experience-section section-padding" id="tecidos">
+      <div class="container">
+        <div class="row gy-5 align-items-start">
+          <div class="col-lg-5 reveal">
+            <span class="section-label">Experiência e Tradição</span>
+            <h2 class="section-title">Mais de 50 anos atendendo a comunidade</h2>
+            <p class="section-text">
+              Há mais de 50 anos o Bazar Recife atende famílias e profissionais da região com dedicação, qualidade e responsabilidade.
+            </p>
+          </div>
+
+          <div class="col-lg-7 reveal reveal-delay-1">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-icon"><i class="bi bi-people"></i></div>
+                <div class="timeline-content">
+                  <span>+50 anos</span>
+                  <h3>Tradição e Atendimento</h3>
+                  <p>Referência local em armarinhos, com variedade de produtos e parceria com costureiras e ateliês.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-icon"><i class="bi bi-arrow-repeat"></i></div>
+                <div class="timeline-content">
+                  <span>Evolução</span>
+                  <h3>Atendimento e Variedade</h3>
+                  <p>Mantemos a tradição, acompanhamos tendências e oferecemos preços justos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confecções -->
+    <section class="about-section section-padding" id="confecoes">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-12 text-center reveal">
+            <span class="section-label">Confecções</span>
+            <h2 class="section-title">Confecções e serviços</h2>
+            <p class="section-text">Trabalhamos com confecções para moda casual, uniformes e peças sob medida, oferecendo materiais e suporte para quem produz.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact-section section-padding" id="contato">
+      <div class="container">
+        <div class="row gy-5 align-items-center">
+          <div class="col-lg-5 reveal">
+              <span class="section-label">Contato</span>
+              <h2 class="section-title">Quer falar com a gente?</h2>
+              <p class="section-text">Entre em contato por e-mail, telefone ou visite nossa loja em Nova Olímpia.</p>
+
+              <div class="contact-info mt-4">
+                <a href="mailto:ednocaldas@hotmail.com"><i class="bi bi-envelope"></i> ednocaldas@hotmail.com</a>
+                <a href="tel:+5544997367633"><i class="bi bi-telephone"></i> +55 (44) 99736-7633</a>
+                <a href="https://wa.me/5544997367633" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                <a href="#"><i class="bi bi-geo-alt"></i> Nova Olímpia – Brasil</a>
+              </div>
+          </div>
+
+          <div class="col-lg-7 reveal reveal-delay-1">
+            <form class="contact-form" id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="name" placeholder="Seu nome" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required />
+                </div>
+                <div class="col-12">
+                  <label for="subject" class="form-label">Assunto</label>
+                  <input type="text" class="form-control" id="subject" placeholder="Como posso ajudar?" required />
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom w-100">
+                    Enviar mensagem <i class="bi bi-send ms-2"></i>
+                  </button>
+                  <p class="form-feedback mt-3 mb-0" id="formFeedback" aria-live="polite"></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer moderno com redes sociais -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-6 text-center text-md-start">
+          <a href="#home" class="footer-brand"><i class="bi bi-tree-fill me-2"></i>Bazar Recife</a>
+          <p class="mb-0 mt-2">Armarinhos, tecidos e confecções — tradição e qualidade há mais de 50 anos.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="social-links justify-content-center justify-content-md-end">
+            <a href="https://github.com/EDNOCALDAS-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/bazarrecife_no" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/5544997367633" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div class="text-center small footer-copy">
+        © <span id="currentYear"></span> Bazar Recife. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript personalizado -->
+  <script src="script.js"></script>
+  
+  <!-- Modal: Botões -->
+  <div class="modal fade" id="botoesModal" tabindex="-1" aria-labelledby="botoesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="botoesModalLabel">Botões variados</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <figure>
+                <img src="imagens/botoes variados.jpg" class="img-fluid rounded" alt="Botões coloridos para roupas">
+                <figcaption class="small mt-2">Botões coloridos para roupas</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <figure>
+                <img src="imagens/botoes variados.jpg" class="img-fluid rounded" alt="Botões decorativos variados">
+                <figcaption class="small mt-2">Botões decorativos variados</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <figure>
+                <img src="imagens/botoes variados.jpg" class="img-fluid rounded" alt="Botões metálicos e clássicos">
+                <figcaption class="small mt-2">Botões metálicos e clássicos</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <figure>
+                <img src="imagens/botoes variados.jpg" class="img-fluid rounded" alt="Botões vintage para peças especiais">
+                <figcaption class="small mt-2">Botões vintage para peças especiais</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal: Zíper -->
+  <div class="modal fade" id="ziperModal" tabindex="-1" aria-labelledby="ziperModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ziperModalLabel">Zíperes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="imagens/ziper.jpg" class="img-fluid rounded" alt="Zíperes variados" />
+          <p class="mt-3 mb-0">Variedade de zíperes para roupas, bolsas e peças especiais.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Tecidos -->
+  <div class="modal fade" id="tecidosModal" tabindex="-1" aria-labelledby="tecidosModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tecidosModalLabel">Galeria de Tecidos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded" alt="Linho">
+                <figcaption class="small mt-2">Linho</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded" alt="Tecidos para camisaria">
+                <figcaption class="small mt-2">Camisaria</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1520975910985-3a9d5b6d1f4b?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded" alt="Viscose">
+                <figcaption class="small mt-2">Viscose</figcaption>
+              </figure>
+            </div>
+
+            <div class="col-md-4">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1520975698513-1b4a4d0d8e6f?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded" alt="Algodão para lençóis">
+                <figcaption class="small mt-2">Algodão (lençóis)</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1549887534-7a2a5b2c9d6b?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded" alt="Linho e Oxford para toalhas de mesa">
+                <figcaption class="small mt-2">Linho / Oxford (toalhas de mesa)</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1503342452485-86b7b1b3f3b6?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded" alt="Cetim várias cores">
+                <figcaption class="small mt-2">Cetim (várias cores)</figcaption>
+              </figure>
+            </div>
+
+            <div class="col-md-4">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded" alt="Tecidos para vestidos de festa junina">
+                <figcaption class="small mt-2">Tecidos para vestidos (festa junina)</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1562158070-6a0b6e2b8b7f?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded" alt="Crepe Amanda">
+                <figcaption class="small mt-2">Crepe Amanda</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1519741491615-8f1e3b4a8f7b?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded" alt="Outros tecidos variados">
+                <figcaption class="small mt-2">Outros tecidos</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
